@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5% auto;
+    width: 75%;
+
+}
+
+main .film {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px;
+    width: 20%;
+    background-color: #F3F3F3;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+main .film .text {
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    padding: 1rem 0 1.1rem;
+}
+
+main .film .image {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+main .film .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.6s;
+
+}
+
+.film .image span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(207, 185, 42);
+    opacity: 0.8;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.icon img {
+    width: 44px;
+    height: 40px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 8px;
+}
+
+.ending {
+   margin-bottom: 5px;
+    background-color: #F3F3F3;
+}
+
+.ending .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.ending .btns button {
+    border: none;
+    outline: none;
+    padding: 15px 15px;
+    margin: 0 50px;
+    background-color: #000;
+    border-radius: 50px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.ending .btns span {
+    background-color: red;
+    border-radius: 50%;
+    padding: 9px;
+    color: #fff;
+}
+
+.film:hover .text {
+    background-color: #000;
+    color: white;
+}
+
+.film:hover .image img {
+    scale: 1.2;
+}
+footer .image {
+width: 100%;
+height: 500px;
+}
+
+footer .image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+header .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+header .heading .box {
+    text-align: center;
+    width: 120px;
+    border-radius: 5px;
+    font-size: large;
+    padding: 10px;
+    transition: 0.6s;
+}
+.box:hover {
+background-color: black;
+color: white;
+}
+header .options {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .options .content {
+background-color: white;
+    margin: 25px;
+    padding: 20px 40px;
+    color: black;
+    border-radius: 50px;
+}
